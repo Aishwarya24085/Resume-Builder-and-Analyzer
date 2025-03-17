@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder & Analyzer</title>
+    <link rel="stylesheet" href="Analyzestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script>
+    
+    <script src="Analyzescript.js" defer></script>
+  
+    
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <p class="cursive-text">Easy Resume</p>
+            <div class="pages">
+                <a href="home.html">Home</a>
+                <a href="Templates.html">Templates</a>
+                <a href="Analyze.html">Analyzer</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact</a>
+                <div class="user-dropdown" id="user-dropdown">
+                    <span id="username-display">Login</span>
+                    <div class="dropdown-menu" id="dropdown-menu">
+                        <button id="logout-btn">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Resume Skill Analyzer</h2>
+        <form id="resumeForm">
+            <label for="role">Select Role:</label>
+            <select id="role" required>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Full Stack Developer">Full Stack Developer</option>
+            </select><br><br>
+            <div class="uploadresume">
+                <label for="resume">Upload Resume:</label><br><br>
+                <input type="file" id="resume" accept=".txt,.pdf,.docx" required>
+            </div>
+            
+            <button type="submit">Analyze Resume</button>
+        </form>
+
+        <div id="result"><h4>Results:</h4></div>
+    </div>
+    
+    <script src="Analyzescript.js" defer></script>
+    <link rel="stylesheet" href="Analyzestyle.css">
+</body>
+</html>

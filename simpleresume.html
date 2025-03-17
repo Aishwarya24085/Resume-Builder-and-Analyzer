@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Template</title>
+    <link rel="stylesheet" href="simpleresumestyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="resume-container" id="resume">
+        <header>
+            <h1 contenteditable="true">John Doe</h1>
+            <p contenteditable="true">Your Location | youremail@yourdomain.com | 0541 999 99 99 | yourwebsite.com</p>
+            <p contenteditable="true">linkedin.com/in/yourusername | github.com/yourusername</p>
+        </header>
+        
+        <section>
+            <h2>Education</h2>
+            <p contenteditable="true"><strong>University of Pennsylvania</strong>, BS in Computer Science (Sept 2000 – May 2005)</p>
+            <p contenteditable="true">GPA: 3.9/4.0</p>
+        </section>
+        
+        <section>
+            <h2>Experience</h2>
+            <p contenteditable="true"><strong>Software Engineer, Apple – Cupertino, CA</strong> (June 2005 – Aug 2007)</p>
+            <ul>
+                <li contenteditable="true">Reduced time to render user buddy lists by 75% by implementing a prediction algorithm.</li>
+                <li contenteditable="true">Integrated iChat with Spotlight Search by creating a tool to extract metadata from saved chat transcripts.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Projects</h2>
+            <p contenteditable="true"><strong>Multi-User Drawing Tool</strong> - Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard".</p>
+        </section>
+        
+        <section>
+            <h2>Skills & Technologies</h2>
+            <p contenteditable="true">Languages: C++, Java, JavaScript, SQL, Python</p>
+            <p contenteditable="true">Technologies: .NET, Microsoft SQL Server, XCode, Interface Builder</p>
+        </section>
+        
+        <section>
+            <h2>Certifications</h2>
+            <p contenteditable="true">Certified LabVIEW Associate Developer (CLAD)</p>
+        </section>
+    </div>
+    
+    <button onclick="downloadPDF()">Download PDF</button>
+    
+    <script src="simpleresumescript.js"></script>
+</body>
+</html>
